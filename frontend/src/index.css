@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blog-title {
+  font-family: "Lora", serif;
+}
+
+.site-logo {
+  font-family: "Lobster", cursive;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Adjust the search bar to be bigger */
+.search-bar {
+  width: 100%;
+  max-width: 50%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  height: 3rem; /* Adjust the height as needed */
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: white;
+  height: 3rem; /* Adjust the height as needed */
+}
+
+.logout-button,
+.login-button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  height: 3rem; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-button:hover,
+.login-button:hover {
+  background-color: #0056b3;
+}

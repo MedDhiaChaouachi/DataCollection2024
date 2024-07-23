@@ -1,0 +1,73 @@
+profile-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #ffffff; /* Change label text color to white */
+}
+
+.profile-form input,
+.profile-form textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  background-color: #2d3748; /* Dark background for input fields */
+  color: #ffffff; /* White text color for input fields */
+}
+
+.profile-form input:focus,
+.profile-form textarea:focus {
+  border-color: #1d4ed8; /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.5); /* Blue shadow on focus */
+}
+
+.profile-form button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.profile-form .btn {
+  background-color: #1d4ed8; /* Blue color for primary button */
+  color: white;
+}
+
+.profile-form .btn:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+.profile-form .btn-secondary {
+  background-color: #e5e7eb; /* Light grey for secondary button */
+  color: #1d4ed8;
+}
+
+.profile-form .btn-secondary:hover {
+  background-color: #d1d5db; /* Darker grey on hover */
+}
+
+.profile-container {
+  padding: 2rem;
+}
+
+.profile-container .text-primary {
+  color: #1d4ed8; /* Primary color */
+}
+
+.profile-container .site-logo {
+  font-weight: bold;
+}
+
+.profile-container .space-y-5 > * + * {
+  margin-top: 1.25rem;
+}
+
+.my-account-section {
+  margin-top: 3rem;
+}
+
+.my-account-section .blog-title {
+  margin-bottom: 1.25rem;
+}
