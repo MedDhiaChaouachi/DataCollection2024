@@ -1,0 +1,47 @@
+/* Ensure existing styles for body and navbar are unaffected */
+body.location-app {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* LocationApp specific styles */
+  .container {
+    @apply flex flex-col items-center justify-center h-screen bg-gray-900 text-white;
+  }
+  
+  .title {
+    @apply text-4xl mb-8;
+    font-family: "Lora", serif;
+    animation: titleAnimation 2s ease-in-out;
+  }
+  
+  .getLocationBtn {
+    @apply px-4 py-2 text-lg text-white bg-blue-500 rounded-md hover:bg-blue-700;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .locationInfo {
+    @apply mt-8 text-lg opacity-0 transform -translate-y-5;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .locationInfo.show {
+    @apply opacity-100 transform translate-y-0;
+  }
+  
+  .loading {
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
+  
+  @keyframes titleAnimation {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
